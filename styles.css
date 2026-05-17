@@ -227,6 +227,20 @@ h3 {
   box-shadow: 0 18px 34px rgba(7, 95, 99, 0.22);
 }
 
+.profile-email {
+  display: block;
+  width: max-content;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 800;
+  transition: color 160ms ease;
+}
+
+.profile-email:hover {
+  color: var(--accent-dark);
+}
+
 @keyframes cta-arrow {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(5px); }
@@ -912,6 +926,11 @@ h3 {
     white-space: normal;
     text-align: center;
   }
+
+  .profile-email {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -919,7 +938,8 @@ h3 {
   .nav-links a::after,
   .road-item,
   .item-photo,
-  .profile-cta { transition: none; }
+  .profile-cta,
+  .profile-email { transition: none; }
   .back-to-top { transition: none; }
 
   .profile-cta span { animation: none; }
